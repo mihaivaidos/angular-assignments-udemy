@@ -12,5 +12,16 @@
 <div class="container">
   <p>ASSIGNMENT 3</p>
   <app-secret/>
+  <hr>
+</div>
+<div class="container">
+  <p>ASSIGNMENT 4</p>
+  <app-game-control (intervalFired)="onIntervalFired($event)"/>
+  @for (oddNumber of oddNumbers; track $index) {
+    <app-odd [number]="oddNumber"/>
+  }
+  @for (evenNumber of evenNumbers; track $index) {
+    <app-even [number]="evenNumber"/>
+  }
 </div>
 

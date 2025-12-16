@@ -6,6 +6,9 @@ import {SuccessAlertComponent} from './assignment-1/success-alert/success-alert.
 import {UsernameComponent} from './assignment-2/username/username.component';
 import {FormsModule} from '@angular/forms';
 import { SecretComponent } from './assignment-3/secret/secret.component';
+import { GameControlComponent } from './assignment-4/game-control/game-control.component';
+import { OddComponent } from './assignment-4/odd/odd.component';
+import { EvenComponent } from './assignment-4/even/even.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +16,10 @@ import { SecretComponent } from './assignment-3/secret/secret.component';
     WarningAlertComponent,
     SuccessAlertComponent,
     UsernameComponent,
-    SecretComponent
+    SecretComponent,
+    GameControlComponent,
+    OddComponent,
+    EvenComponent
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
