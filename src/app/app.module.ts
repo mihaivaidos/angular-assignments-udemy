@@ -5,11 +5,14 @@ import {WarningAlertComponent} from './assignment-1/warning-alert/warning-alert.
 import {SuccessAlertComponent} from './assignment-1/success-alert/success-alert.component';
 import {UsernameComponent} from './assignment-2/username/username.component';
 import {FormsModule} from '@angular/forms';
-import { SecretComponent } from './assignment-3/secret/secret.component';
-import { GameControlComponent } from './assignment-4/game-control/game-control.component';
-import { OddComponent } from './assignment-4/odd/odd.component';
-import { EvenComponent } from './assignment-4/even/even.component';
-import { GameComponent } from './assignment-4/game/game.component';
+import {SecretComponent} from './assignment-3/secret/secret.component';
+import {GameControlComponent} from './assignment-4/game-control/game-control.component';
+import {OddComponent} from './assignment-4/odd/odd.component';
+import {EvenComponent} from './assignment-4/even/even.component';
+import {GameComponent} from './assignment-4/game/game.component';
+import {ActiveUsersComponent} from './assignment-5/active-users/active-users.component';
+import { InactiveUsersComponent } from './assignment-5/inactive-users/inactive-users.component';
+import { UsersComponent } from './assignment-5/users/users.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { GameComponent } from './assignment-4/game/game.component';
     GameControlComponent,
     OddComponent,
     EvenComponent,
-    GameComponent
+    GameComponent,
+    ActiveUsersComponent,
+    InactiveUsersComponent,
+    UsersComponent
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
