@@ -1,0 +1,2 @@
+- Build a reverse pipe that reverses a string.
+- Build a sort pipe that sorts the list 

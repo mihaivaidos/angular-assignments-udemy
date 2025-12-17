@@ -15,6 +15,9 @@ import {InactiveUsersComponent} from './assignment-5/inactive-users/inactive-use
 import {UsersComponent} from './assignment-5/users/users.component';
 import {UserFormComponent} from './assignment-6/user-form/user-form.component';
 import {UserReactiveFormComponent} from './assignment-7/user-reactive-form/user-reactive-form.component';
+import {ReversePipe} from './assignment-8/reverse.pipe';
+import {SortPipe} from './assignment-8/sort.pipe';
+import {AppStatusComponent} from './assignment-8/app-status/app-status.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +34,11 @@ import {UserReactiveFormComponent} from './assignment-7/user-reactive-form/user-
     InactiveUsersComponent,
     UsersComponent,
     UserFormComponent,
-    UserReactiveFormComponent
+    UserReactiveFormComponent,
+    ReversePipe,
+    SortPipe,
+    AppStatusComponent,
+    AppStatusComponent
   ],
   imports: [BrowserModule, FormsModule, ReactiveFormsModule],
   providers: [],
