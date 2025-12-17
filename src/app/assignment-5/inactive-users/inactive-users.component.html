@@ -1,0 +1,8 @@
+<h3>Inactive Users</h3>
+<ul class="list-group">
+  @for (user of usersService.inactiveUsers(); track $index) {
+    <li class="list-group-item">
+      {{ user }} | <a href="#" (click)="onSetToActive($index)">Set to Active</a>
+    </li>
+  }
+</ul>
