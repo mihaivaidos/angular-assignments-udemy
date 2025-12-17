@@ -42,11 +42,7 @@ export class UserReactiveFormComponent {
       console.log('INVALID FORM');
       return;
     }
-    
-    console.log(this.form);
-    const enteredProjectName = this.form.value.projectName;
-    const enteredEmail = this.form.value.email;
-    const enteredStatus = this.form.value.status;
-    console.log(enteredProjectName, enteredEmail, enteredStatus);
+
+    console.log(this.form.value);
   }
 }
