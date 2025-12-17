@@ -1,0 +1,7 @@
+<app-game-control (intervalFired)="onIntervalFired($event)"/>
+@for (oddNumber of oddNumbers(); track $index) {
+  <app-odd [number]="oddNumber"/>
+}
+@for (evenNumber of evenNumbers(); track $index) {
+  <app-even [number]="evenNumber"/>
+}

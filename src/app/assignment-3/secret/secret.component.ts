@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, signal} from '@angular/core';
 
 @Component({
   selector: 'app-secret',
@@ -6,13 +6,13 @@ import {Component} from '@angular/core';
   styleUrl: './secret.component.css'
 })
 export class SecretComponent {
-  showContent = false;
-  clickCounter = 0;
-  log = [];
+  showContent = signal(false);
+  clickCounter = signal(0);
+  log = signal<number[]>([]);
 
   onDisplay() {
-    this.showContent = !this.showContent;
-    this.clickCounter++;
-    this.log.push(this.clickCounter);
+    this.showContent.update(value => !value);
+    this.clickCounter.update(value => value + 1);
+    this.log.update(arr => [...arr, this.clickCounter()]);
   }
 }

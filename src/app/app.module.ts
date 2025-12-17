@@ -9,6 +9,7 @@ import { SecretComponent } from './assignment-3/secret/secret.component';
 import { GameControlComponent } from './assignment-4/game-control/game-control.component';
 import { OddComponent } from './assignment-4/odd/odd.component';
 import { EvenComponent } from './assignment-4/even/even.component';
+import { GameComponent } from './assignment-4/game/game.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { EvenComponent } from './assignment-4/even/even.component';
     SecretComponent,
     GameControlComponent,
     OddComponent,
-    EvenComponent
+    EvenComponent,
+    GameComponent
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],

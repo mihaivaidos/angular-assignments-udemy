@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, signal} from '@angular/core';
 
 @Component({
   selector: 'app-username',
@@ -6,9 +6,9 @@ import {Component} from '@angular/core';
   styleUrl: './username.component.css'
 })
 export class UsernameComponent {
-  username = '';
+  username = signal('');
 
   onReset() {
-    this.username = '';
+    this.username.set('');
   }
 }
