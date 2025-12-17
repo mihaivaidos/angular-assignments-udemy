@@ -13,6 +13,7 @@ import {GameComponent} from './assignment-4/game/game.component';
 import {ActiveUsersComponent} from './assignment-5/active-users/active-users.component';
 import { InactiveUsersComponent } from './assignment-5/inactive-users/inactive-users.component';
 import { UsersComponent } from './assignment-5/users/users.component';
+import { UserFormComponent } from './assignment-6/user-form/user-form.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { UsersComponent } from './assignment-5/users/users.component';
     GameComponent,
     ActiveUsersComponent,
     InactiveUsersComponent,
-    UsersComponent
+    UsersComponent,
+    UserFormComponent
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
