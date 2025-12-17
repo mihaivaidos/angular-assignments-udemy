@@ -26,7 +26,7 @@ function restrictProjectNameAsync(control: AbstractControl) {
 export class UserReactiveFormComponent {
   form = new FormGroup({
     projectName: new FormControl('', {
-      validators: [Validators.required, restrictProjectName],
+      validators: [Validators.required],
       asyncValidators: [restrictProjectNameAsync]
     }),
     email: new FormControl('', {
